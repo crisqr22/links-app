@@ -1,0 +1,12 @@
+{
+  "LOGIN": "Login",
+  "LOGIN_TITLE": "Login",
+  "LABEL_EMAIL": "Your email",
+  "LABEL_PASSWORD": "Your password",
+  "REGISTER": "Signup",
+  "REGISTER_TITLE": "Signup",
+  "LABEL_NAME": "Full name",
+  "INPUT_ERROR_EMAIL": "This format is not supported",
+  "INPUT_ERROR_REQUIRED": "This input is required",
+  "REGISTER_SUCCESS_FULL": "Registration has been done successfully, now you can login"
+}

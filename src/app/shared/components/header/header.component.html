@@ -1,0 +1,12 @@
+<div class="header">
+  <div class="row no-gutters">
+    <div class="col-6 col-sm-8">
+      <img *ngIf="showLogo" class="logo" src="./assets/link-logo.png">
+    </div>
+    <div class="col-6 col-sm-4 text-right">
+      <a *ngIf="!session"  [routerLink]="'/auth/register'" class="btn md btn-app-outline-primary">Sign in</a>
+      <a (click)="logOut()" *ngIf="session" class="btn md btn-app-outline-primary">Logout</a>
+    </div>
+  </div>
+</div>
+

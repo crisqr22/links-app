@@ -1,0 +1,18 @@
+<div>
+  <app-header
+    [showLogo]="true"
+    [session]="session"
+    (onLogout)="logOut()"
+  ></app-header>
+  <div class="container-fluid m-t-50">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-3">
+        <app-avatar *ngIf="user" [user]="user"></app-avatar>
+      </div>
+      <div class="col-12 col-sm-12 col-md-9">
+        <router-outlet ng-cloak></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
+

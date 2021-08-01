@@ -1,0 +1,7 @@
+{
+  "LABEL_URL": "Url To Save",
+  "LABEL_NAME_URL": "Name of Url",
+  "SEND_URL": "Add",
+  "INPUT_ERROR_EMAIL": "This format is not supported",
+  "INPUT_ERROR_REQUIRED": "This input is required"
+}
