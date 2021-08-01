@@ -2,7 +2,7 @@
   <app-header></app-header>
 
   <div class="d-flex align-items-center justify-content-center form-box-container">
-    <div class="auth-box">
+    <div class="auth-box animate__animated animate__fadeInDown">
       <div class="logo m-b-15">
         <img src="assets/link-logo.png">
       </div>
@@ -19,7 +19,7 @@
                 class="form-control"
                 id="name"
                 aria-describedby="name"
-                [ngClass]="{'is-invalid': formUtils.validErrors(signinForm, 'name')}">
+                [ngClass]="{'is-invalid animate__animated animate__shakeX': formUtils.validErrors(signinForm, 'name')}">
 
               <div class="error-box" *ngIf="formUtils.validErrors(signinForm, 'name')">
                 {{ formUtils.renderKeyError(signinForm.get('name')?.errors )}}
@@ -35,7 +35,7 @@
                 class="form-control"
                 id="email"
                 aria-describedby="email"
-                [ngClass]="{'is-invalid': formUtils.validErrors(signinForm, 'email')}"
+                [ngClass]="{'is-invalid animate__animated animate__shakeX': formUtils.validErrors(signinForm, 'email')}"
               >
               <div class="error-box" *ngIf="formUtils.validErrors(signinForm, 'email')">
                 {{ formUtils.renderKeyError(signinForm.get('email')?.errors )}}
@@ -50,7 +50,7 @@
                 class="form-control"
                 id="password"
                 aria-describedby="password"
-                [ngClass]="{'is-invalid': formUtils.validErrors(signinForm, 'password')}"
+                [ngClass]="{'is-invalid animate__animated animate__shakeX': formUtils.validErrors(signinForm, 'password')}"
               >
               <div class="error-box" *ngIf="formUtils.validErrors(signinForm,'password')">
                 {{ formUtils.renderKeyError(signinForm.get('password')?.errors )}}
