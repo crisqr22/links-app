@@ -12,9 +12,9 @@ export class HeaderComponent {
   @Input() session: IAuthSession | undefined;
 
   @Output()
-  onLogout = new EventEmitter();
+  logoutEvent = new EventEmitter();
 
   public logOut() {
-    this.onLogout.emit(true);
+    this.logoutEvent.emit(true);
   }
 }

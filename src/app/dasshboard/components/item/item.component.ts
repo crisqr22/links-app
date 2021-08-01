@@ -10,9 +10,9 @@ export class ItemComponent {
   @Input() link: ILink = {};
 
   @Output()
-  onDelete = new EventEmitter();
+  deleteEvent = new EventEmitter();
 
   public delete(link: ILink): void {
-    this.onDelete.emit(link);
+    this.deleteEvent.emit(link);
   }
 }
