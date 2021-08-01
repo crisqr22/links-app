@@ -53,6 +53,6 @@
   <app-item
     *ngFor="let link of links.reverse() ; index as i "
     [link]="link"
-    (onDelete)="remove($event)"
+    (deleteEvent)="remove($event)"
   ></app-item>
 </section>
